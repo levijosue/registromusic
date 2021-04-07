@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Udemusic</title>
+</head>
+
+<body>
+
+    <h1>Bienvenidos a Udemusic</h1>
+    <hr>
+    <h2>Formulario de registro de estudiantes</h2>
+    <section>
+        <p>Introduce tus datos para el registro de tu plantilla de estudiante:</p>
+        <form action="Prueba2.html" method="POST" enctype="text/plain">
+
+            <fieldset>
+                <label for="name">Nombre (s):</label>
+                <input type="text" name="name" placeholder="Introduce tu nombre">
+                <label for="lastName">Apellido (s):</label>
+                <input type="text" name="lastName" placeholder="Introduce tus apellidos">
+                <br>
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" name="mail" placeholder="Introduce tu E-mail">
+                <br>
+                <legend>Datos personales</legend>
+                <span>Género:</span>
+                <input type="radio" name="sex" id="male">
+                <label for="male">Masculino</label>
+                <input type="radio" name="sex" id="female">
+                <label for="female">Femenino</label>
+            </fieldset>
+
+            <br>
+            <label for="inst">Instrumento(s):</label>
+            <input type="checkbox" name="inst">Piano
+            <input type="checkbox" name="inst">Bajo
+            <input type="checkbox" name="inst">Batería
+            <input type="checkbox" name="inst">Guitarra
+            <input type="checkbox" name="inst">Percusión menor
+            <input type="checkbox" name="inst">Otro
+            <label for="otro">Especifique cual otro</label>
+            <input type="text" name="otro" placeholder="Nombre del instrumento">
+            
+            <br>
+
+            <label for="hour">Horarios de clase:</label>
+            <select id="hour">
+                <option value="sel" selected>Seleccione</option>
+                <option value="1012">10:00 - 12:00</option>
+                <option value="1214">12:00 - 14:00</option>
+                <option value="1618">16:00 - 18:00</option>
+                <option value="1820">18:00 - 20:00</option>
+            </select>
+
+            <input type="submit">Enviar
+            <input type="reset">Enviar
+
+
+        </form>
+    </section>
+
+</body>
+
+</html>
